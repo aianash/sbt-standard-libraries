@@ -1,0 +1,1 @@
+addSbtPlugin("com.goshoplane" % "sbt-standard-libraries" % "0.1.0")
