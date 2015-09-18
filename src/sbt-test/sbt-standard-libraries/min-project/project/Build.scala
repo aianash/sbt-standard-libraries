@@ -20,6 +20,7 @@ object Build extends sbt.Build with StandardLibraries {
           ++ Libs.akkaContrib
           ++ Libs.akkaCluster
           ++ Libs.akkaMultiNodeTestkit
+          ++ Libs.akkaTestkit
           ++ Libs.scalaz
           ++ Libs.fastutil
           ++ Libs.twitterUtil
@@ -41,6 +42,12 @@ object Build extends sbt.Build with StandardLibraries {
           ++ Libs.curator
           ++ Libs.curatorTest
           ++ Libs.scalatest
+          ++ Libs.mapdb
+          ++ Libs.caffeine
+          ++ Libs.onyxCore
+          ++ Libs.commonsCore
+          ++ Libs.commonsCatalogue
+          ++ Libs.microservice
       )
   )
 

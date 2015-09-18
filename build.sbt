@@ -2,7 +2,7 @@ organization := "com.goshoplane"
 
 name := "sbt-standard-libraries"
 
-version := "0.1.0"
+version := "0.1.1"
 
 scalaVersion := "2.10.4"
 
@@ -15,7 +15,7 @@ publishMavenStyle := true
 scriptedSettings
 
 scriptedLaunchOpts <<= (scriptedLaunchOpts, version) { case (s,v) => s ++
-  Seq("-Xmx1024M", "-XX:MaxPermSize=256M", "-Dplugin.version=" + v)
+  Seq("-Xmx1024M", "-Dplugin.version=" + v)
 }
 
 scriptedBufferLog := false
