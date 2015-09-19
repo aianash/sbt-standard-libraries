@@ -11,7 +11,7 @@ Hence this repo will be primarily used to keep up with the latest versions.
 **project/plugins.sbt**
 
 ```scala
-addSbtPlugin("com.goshoplane" % "sbt-standard-libraries" % "0.1.0") // for sbt-0.13.x or higher
+addSbtPlugin("com.goshoplane" % "sbt-standard-libraries" % "0.1.1") // for sbt-0.13.x or higher
 ```
 
 **project/Build.scala**
@@ -63,6 +63,12 @@ object Build extends sbt.Build with StandardLibraries {
           ++ Libs.curator
           ++ Libs.curatorTest
           ++ Libs.scalatest
+          ++ Libs.mapdb
+          ++ Libs.caffeine
+          ++ Libs.onyxCore
+          ++ Libs.commonsCore
+          ++ Libs.commonsCatalogue
+          ++ Libs.microservice
       )
   )
 }
