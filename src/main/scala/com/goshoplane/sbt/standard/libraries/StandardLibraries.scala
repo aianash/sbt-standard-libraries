@@ -27,6 +27,7 @@ trait StandardLibraries {
   )
 
   object Version {
+    val java            = "1.8.0_60" // all tests are done for java 8
     val scala           = "2.11.7"
     val lucene          = "5.2.1"
     val akka            = "2.3.12"
@@ -47,10 +48,44 @@ trait StandardLibraries {
     val kafka           = "0.8.2.1"
     val curator         = "2.8.0"
     val scalatest       = "2.2.4"
+    val shoplaneCommons = "0.0.1"
+    val onyx            = "0.0.1"
+    val caffeine        = "1.3.2"
+    val mapdb           = "2.0-beta7"
   }
 
 
   object Libs {
+
+    ////////////////////////// MapDB //////////////////////////
+
+    val mapdb = Seq(
+      "org.mapdb" % "mapdb" % Version.mapdb)
+
+
+    ////////////////////////// Caffeine ///////////////////////
+
+    val caffeine = Seq(
+      "com.github.ben-manes.caffeine" % "caffeine" % Version.caffeine)
+
+
+    ////////////////////////// Shoplane Onyx //////////////////
+
+    val onyxCore = Seq(
+      "com.goshoplane" %% "onyx-core" % Version.onyx)
+
+
+    ////////////////////////// Shoplane Commons ///////////////
+
+    val commonsCore = Seq(
+      "com.goshoplane" %% "commons-core" % Version.shoplaneCommons)
+
+    val commonsCatalogue = Seq(
+      "com.goshoplane" %% "commons-catalogue" % Version.shoplaneCommons)
+
+    val microservice = Seq(
+      "com.goshoplane" %% "commons-microservice" % Version.shoplaneCommons)
+
 
     ////////////////////////// Lucene /////////////////////////
 
@@ -62,10 +97,10 @@ trait StandardLibraries {
     )
 
     ////////////////////////// Akka /////////////////////////
+
     val akka = Seq (
       "com.typesafe.akka" %% "akka-slf4j" % Version.akka,
       "com.typesafe.akka" %% "akka-actor" % Version.akka)
-
 
     val akkaCluster = Seq (
       "com.typesafe.akka" %% "akka-cluster" % Version.akka)
@@ -73,9 +108,11 @@ trait StandardLibraries {
     val akkaContrib = Seq (
       "com.typesafe.akka" %% "akka-contrib" % Version.akka)
 
-
     val akkaMultiNodeTestkit = Seq(
       "com.typesafe.akka" %% "akka-multi-node-testkit" % Version.akka)
+
+    val akkaTestkit = Seq(
+      "com.typesafe.akka" %% "akka-testkit" % Version.akka)
 
 
     ////////////////////////// Scalaz /////////////////////////

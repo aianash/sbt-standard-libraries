@@ -11,7 +11,7 @@ Hence this repo will be primarily used to keep up with the latest versions.
 **project/plugins.sbt**
 
 ```scala
-addSbtPlugin("com.goshoplane" % "sbt-standard-libraries" % "0.1.0") // for sbt-0.13.x or higher
+addSbtPlugin("com.goshoplane" % "sbt-standard-libraries" % "0.1.1") // for sbt-0.13.x or higher
 ```
 
 **project/Build.scala**
@@ -63,6 +63,12 @@ object Build extends sbt.Build with StandardLibraries {
           ++ Libs.curator
           ++ Libs.curatorTest
           ++ Libs.scalatest
+          ++ Libs.mapdb
+          ++ Libs.caffeine
+          ++ Libs.onyxCore
+          ++ Libs.commonsCore
+          ++ Libs.commonsCatalogue
+          ++ Libs.microservice
       )
   )
 }
@@ -92,3 +98,18 @@ object Build extends sbt.Build with StandardLibraries {
 19. Apache Kafka
 20. Apache Curator (including curator-test)
 21. Scalatest
+22. Akka Testkit
+23. Caffeine
+24. MapDB
+25. Shoplane Commons
+26. Onyx Core
+
+## Adding new Libraries
+
+1. Add to StandardLibraries class
+2. To test, add them as dependency in sbt-test/sbt-standard-libraries/min-project/project/Build.scala
+3. and then test it by running
+```bash
+> scripted
+```
+from root folder of the project.
