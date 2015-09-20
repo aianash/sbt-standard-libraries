@@ -48,6 +48,8 @@ object Build extends sbt.Build with StandardLibraries {
           ++ Libs.commonsCore
           ++ Libs.commonsCatalogue
           ++ Libs.microservice
+          ++ Libs.restfb
+          ++ Libs.jodaTime
       )
   )
 
