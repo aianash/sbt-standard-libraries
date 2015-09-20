@@ -23,6 +23,7 @@ trait StandardLibraries {
     "Sonatype snapshots"     at "https://oss.sonatype.org/content/repositories/snapshots",
     "Sonatype staging"       at "http://oss.sonatype.org/content/repositories/staging",
     "softprops-maven"        at "http://dl.bintray.com/content/softprops/maven",
+    Resolver.bintrayRepo("websudos", "oss-releases"),
     "Local Maven Repository" at "file://" + Path.userHome.absolutePath + "/.m2/repository"
   )
 
@@ -43,7 +44,7 @@ trait StandardLibraries {
     val scaldi          = "0.3.2"
     val retry           = "0.2.0"
     val odelay          = "0.1.0"
-    val phantom         = "1.10.1"
+    val phantom         = "1.11.0"
     val play            = "2.4.2"
     val kafka           = "0.8.2.1"
     val curator         = "2.8.0"
@@ -51,11 +52,23 @@ trait StandardLibraries {
     val shoplaneCommons = "0.0.1"
     val onyx            = "0.0.1"
     val caffeine        = "1.3.2"
+    val jodaTime        = "2.8.2"
+    val restFb          = "1.14.1"
     val mapdb           = "2.0-beta7"
   }
 
 
   object Libs {
+
+    ////////////////////////// Rest Fb ////////////////////////
+
+    val restFb = Seq(
+      "com.restfb" % "restfb" % Version.restFb)
+
+    ////////////////////////// Joda Time //////////////////////
+
+    val jodaTime = Seq(
+      "joda-time" % "joda-time" % Version.jodaTime)
 
     ////////////////////////// MapDB //////////////////////////
 
