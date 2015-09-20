@@ -53,7 +53,7 @@ trait StandardLibraries {
     val onyx            = "0.0.1"
     val caffeine        = "1.3.2"
     val jodaTime        = "2.8.2"
-    val restfb          = "1.14.1"
+    val restFb          = "1.14.1"
     val mapdb           = "2.0-beta7"
   }
 
@@ -62,8 +62,8 @@ trait StandardLibraries {
 
     ////////////////////////// Rest Fb ////////////////////////
 
-    val restfb = Seq(
-      "com.restfb" % "restfb" % Version.restfb)
+    val restFb = Seq(
+      "com.restfb" % "restfb" % Version.restFb)
 
     ////////////////////////// Joda Time //////////////////////
 
