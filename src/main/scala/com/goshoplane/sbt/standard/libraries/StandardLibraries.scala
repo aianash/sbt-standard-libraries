@@ -45,20 +45,54 @@ trait StandardLibraries {
     val retry           = "0.2.0"
     val odelay          = "0.1.0"
     val phantom         = "1.11.0"
-    val play            = "2.4.2"
+    val play            = "2.4.3"
     val kafka           = "0.8.2.1"
     val curator         = "2.8.0"
     val scalatest       = "2.2.4"
-    val shoplaneCommons = "0.0.1"
+    val shoplaneCommons = "0.1.0"
     val onyx            = "0.0.1"
     val caffeine        = "1.3.2"
     val jodaTime        = "2.8.2"
     val restFb          = "1.14.1"
     val mapdb           = "2.0-beta7"
+    val hemingway       = "0.1.0"
+    val jsoup           = "1.8.3"
+    val jline           = "2.12.1"
+    val googleApiClient = "1.20.0"
+    val googleApis      = "v2-rev94-1.20.0"
+    val googleHttpClient = "1.20.0"
   }
 
 
   object Libs {
+
+    ////////////////////////// Google client ////////////////////////
+
+    val googleApiClient = Seq(
+      "com.google.api-client" % "google-api-client" % Version.googleApiClient)
+
+    val googleHttpClient = Seq(
+      "com.google.http-client" % "google-http-client-jackson" % Version.googleHttpClient)
+
+    ////////////////////////// Google Apis ////////////////////////
+
+    val googleApisOAuth2 = Seq(
+      "com.google.apis" % "google-api-services-oauth2" % Version.googleApis)
+
+    ////////////////////////// JLine ////////////////////////
+
+    val jline = Seq(
+      "jline" % "jline" % Version.jline)
+
+    ////////////////////////// Hemingway ////////////////////////
+
+    val hemingway = Seq(
+      "com.goshoplane" %% "hemingway-dictionary" % Version.hemingway)
+
+    ////////////////////////// Jsoup ////////////////////////
+
+    val jsoup = Seq(
+      "org.jsoup" % "jsoup" % Version.jsoup)
 
     ////////////////////////// Rest Fb ////////////////////////
 

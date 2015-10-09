@@ -50,6 +50,12 @@ object Build extends sbt.Build with StandardLibraries {
           ++ Libs.microservice
           ++ Libs.restFb
           ++ Libs.jodaTime
+          ++ Libs.googleHttpClient
+          ++ Libs.googleApisOAuth2
+          ++ Libs.googleApiClient
+          ++ Libs.jline
+          ++ Libs.hemingway
+          ++ Libs.jsoup
       )
   )
 
