@@ -1,4 +1,4 @@
-package com.goshoplane.sbt.standard.libraries
+package com.aianonymous.sbt.standard.libraries
 
 import sbt._
 import Keys._
@@ -28,33 +28,33 @@ trait StandardLibraries {
   )
 
   object Version {
-    val java            = "1.8.0_60" // all tests are done for java 8
-    val scala           = "2.11.7"
-    val lucene          = "5.2.1"
-    val akka            = "2.3.12"
-    val scalaz          = "7.1.3"
+    val java            = "1.8.0_101" // all tests are done for java 8
+    val scala           = "2.11.8"
+    val lucene          = "6.1.0"
+    val akka            = "2.4.9-RC2"
+    val scalaz          = "7.2.5"
     val fastutil        = "7.0.7"
     val twitterUtil     = "6.25.0"
     val slf4j           = "1.7.12"
-    val scallop         = "0.9.5"
+    val scallop         = "2.0.1"
     val commonsLang     = "3.4"
     val bijection       = "0.8.1"
-    val guava           = "18.0"
-    val logback         = "1.1.2"
+    val guava           = "19.0"
+    val logback         = "1.1.7"
     val scaldi          = "0.3.2"
     val retry           = "0.2.0"
     val odelay          = "0.1.0"
-    val phantom         = "1.11.0"
-    val play            = "2.4.3"
+    val phantom         = "1.27.0"
+    val play            = "2.5.4"
     val kafka           = "0.8.2.1"
-    val curator         = "2.8.0"
-    val scalatest       = "2.2.4"
+    val curator         = "2.11.0" // using zookeeper 2.4.8 (current stable version)
+    val scalatest       = "3.0.0"
     val shoplaneCommons = "0.1.0"
     val onyx            = "0.0.1"
     val caffeine        = "1.3.2"
-    val jodaTime        = "2.8.2"
+    val jodaTime        = "2.9.4"
     val restFb          = "1.14.1"
-    val mapdb           = "2.0-beta7"
+    val mapdb           = "3.0.1"
     val hemingway       = "0.1.0"
     val jsoup           = "1.8.3"
     val jline           = "2.12.1"
@@ -125,13 +125,13 @@ trait StandardLibraries {
     ////////////////////////// Shoplane Commons ///////////////
 
     val commonsCore = Seq(
-      "com.goshoplane" %% "commons-core" % Version.shoplaneCommons)
+      "com.aianonymous" %% "commons-core" % Version.shoplaneCommons)
 
     val commonsCatalogue = Seq(
       "com.goshoplane" %% "commons-catalogue" % Version.shoplaneCommons)
 
     val microservice = Seq(
-      "com.goshoplane" %% "commons-microservice" % Version.shoplaneCommons)
+      "com.aianonymous" %% "commons-microservice" % Version.shoplaneCommons)
 
 
     ////////////////////////// Lucene /////////////////////////
@@ -248,8 +248,7 @@ trait StandardLibraries {
     ////////////////////////// Phantom /////////////////////////
 
     val phantom = Seq (
-      "com.websudos" %% "phantom-dsl" % Version.phantom,
-      "com.websudos" %% "phantom-udt" % Version.phantom)
+      "com.websudos" %% "phantom-dsl" % Version.phantom)
 
 
     ////////////////////////// Play /////////////////////////

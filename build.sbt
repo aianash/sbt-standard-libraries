@@ -1,10 +1,10 @@
-organization := "com.goshoplane"
+organization := "com.aianonymous"
 
 name := "sbt-standard-libraries"
 
-version := "0.1.2"
+version := "0.2.0"
 
-scalaVersion := "2.10.4"
+scalaVersion := "2.10.6"
 
 scalacOptions := Seq("-unchecked", "-deprecation", "-encoding", "utf8")
 

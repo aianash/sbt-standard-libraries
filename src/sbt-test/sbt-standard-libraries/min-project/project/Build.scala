@@ -1,6 +1,6 @@
 import sbt._
 import sbt.Keys._
-import com.goshoplane.sbt.standard.libraries.StandardLibraries
+import com.aianonymous.sbt.standard.libraries.StandardLibraries
 
 object Build extends sbt.Build with StandardLibraries {
 
@@ -9,7 +9,7 @@ object Build extends sbt.Build with StandardLibraries {
     base = file("."),
     settings = Defaults.defaultSettings ++
       Seq(
-        scalaVersion := "2.11.7",
+        scalaVersion := "2.11.8",
         crossPaths := false,
 
         resolvers ++= StandardResolvers,
@@ -44,9 +44,9 @@ object Build extends sbt.Build with StandardLibraries {
           ++ Libs.scalatest
           ++ Libs.mapdb
           ++ Libs.caffeine
-          ++ Libs.onyxCore
+          // ++ Libs.onyxCore
           ++ Libs.commonsCore
-          ++ Libs.commonsCatalogue
+          // ++ Libs.commonsCatalogue
           ++ Libs.microservice
           ++ Libs.restFb
           ++ Libs.jodaTime
@@ -54,7 +54,7 @@ object Build extends sbt.Build with StandardLibraries {
           ++ Libs.googleApisOAuth2
           ++ Libs.googleApiClient
           ++ Libs.jline
-          ++ Libs.hemingway
+          // ++ Libs.hemingway
           ++ Libs.jsoup
       )
   )
