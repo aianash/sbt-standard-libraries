@@ -1,1 +1,1 @@
-addSbtPlugin("com.goshoplane" % "sbt-standard-libraries" % "0.1.1")
+addSbtPlugin("com.aianonymous" % "sbt-standard-libraries" % "0.2.0")
