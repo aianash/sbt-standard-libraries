@@ -49,7 +49,7 @@ trait StandardLibraries {
     val kafka           = "0.8.2.1"
     val curator         = "2.11.0" // using zookeeper 2.4.8 (current stable version)
     val scalatest       = "3.0.0"
-    val shoplaneCommons = "0.1.0"
+    val aianonCommons   = "0.1.0"
     val onyx            = "0.0.1"
     val caffeine        = "1.3.2"
     val jodaTime        = "2.9.4"
@@ -122,16 +122,19 @@ trait StandardLibraries {
       "com.goshoplane" %% "onyx-core" % Version.onyx)
 
 
-    ////////////////////////// Shoplane Commons ///////////////
+    ////////////////////////// Aianonymous Commons ///////////////
 
     val commonsCore = Seq(
-      "com.aianonymous" %% "commons-core" % Version.shoplaneCommons)
+      "com.aianonymous" %% "commons-core" % Version.aianonCommons)
 
     val commonsCatalogue = Seq(
-      "com.goshoplane" %% "commons-catalogue" % Version.shoplaneCommons)
+      "com.goshoplane" %% "commons-catalogue" % Version.aianonCommons)
 
     val microservice = Seq(
-      "com.aianonymous" %% "commons-microservice" % Version.shoplaneCommons)
+      "com.aianonymous" %% "commons-microservice" % Version.aianonCommons)
+
+    val commonsEvents = Seq(
+      "com.aianonymous" %% "commons-events" % Version.aianonCommons)
 
 
     ////////////////////////// Lucene /////////////////////////
