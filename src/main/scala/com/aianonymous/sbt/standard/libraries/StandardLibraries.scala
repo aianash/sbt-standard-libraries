@@ -61,6 +61,7 @@ trait StandardLibraries {
     val googleApiClient = "1.20.0"
     val googleApis      = "v2-rev94-1.20.0"
     val googleHttpClient = "1.20.0"
+    val msgpack         = "0.6.11"
   }
 
 
@@ -281,6 +282,11 @@ trait StandardLibraries {
 
     val scalatest = Seq(
       "org.scalatest" %% "scalatest" % Version.scalatest % "test")
+
+    /////////////////////// Message Pack /////////////////////////
+
+    val msgpack = Seq(
+      "org.msgpack" %% "msgpack-scala" % Version.msgpack)
 
   }
 
