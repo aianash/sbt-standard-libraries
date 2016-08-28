@@ -137,6 +137,9 @@ trait StandardLibraries {
     val commonsEvents = Seq(
       "com.aianonymous" %% "commons-events" % Version.aianonCommons)
 
+    val commonsCustomer = Seq(
+      "com.aianonymous" %% "commons-customer" % Version.aianonCommons)
+
 
     ////////////////////////// Lucene /////////////////////////
 
