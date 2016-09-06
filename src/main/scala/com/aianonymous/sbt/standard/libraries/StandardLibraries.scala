@@ -50,6 +50,7 @@ trait StandardLibraries {
     val curator         = "2.11.0" // using zookeeper 2.4.8 (current stable version)
     val scalatest       = "3.0.0"
     val aianonCommons   = "0.1.0"
+    val cassie          = "0.1.0"
     val onyx            = "0.0.1"
     val caffeine        = "1.3.2"
     val jodaTime        = "2.9.4"
@@ -139,6 +140,12 @@ trait StandardLibraries {
 
     val commonsCustomer = Seq(
       "com.aianonymous" %% "commons-customer" % Version.aianonCommons)
+
+
+    //////////////////////// Aianonymous Cassie //////////////////////
+
+    val cassieCore = Seq(
+      "com.aianonymous" %% "cassie-core" % Version.cassie)
 
 
     ////////////////////////// Lucene /////////////////////////
