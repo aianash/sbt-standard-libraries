@@ -46,6 +46,7 @@ object Build extends sbt.Build with StandardLibraries {
           ++ Libs.caffeine
           // ++ Libs.onyxCore
           ++ Libs.commonsCore
+          ++ Libs.commonsBehavior
           // ++ Libs.commonsCatalogue
           ++ Libs.microservice
           ++ Libs.restFb
