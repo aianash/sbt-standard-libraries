@@ -142,6 +142,8 @@ trait StandardLibraries {
     val commonsCustomer = Seq(
       "com.aianonymous" %% "commons-customer" % Version.aianonCommons)
 
+    val commonsBehavior = Seq(
+      "com.aianonymous" %% "commons-behavior" % Version.aianonCommons)
 
     //////////////////////// Aianonymous Cassie //////////////////////
 
