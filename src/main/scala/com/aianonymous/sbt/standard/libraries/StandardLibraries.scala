@@ -64,6 +64,7 @@ trait StandardLibraries {
     val googleHttpClient = "1.20.0"
     val msgpack         = "0.6.11"
     val jna             = "4.2.2"
+    val maleorang       = "3.0-0.9.3"
   }
 
 
@@ -305,6 +306,10 @@ trait StandardLibraries {
 
     val jna = Seq(
       "net.java.dev.jna" % "jna" % Version.jna)
+    /////////////////////// maleorang ///////////////////////////
+
+    val maleorang = Seq(
+      "com.ecwid" % "maleorang" % Version.maleorang)
 
   }
 
