@@ -66,10 +66,15 @@ trait StandardLibraries {
     val msgpack         = "0.6.11"
     val jna             = "4.2.2"
     val maleorang       = "3.0-0.9.3"
+    val mongodb         = "1.1.1"
   }
 
 
   object Libs {
+
+    ////////////////////////// Mongo ////////////////////////////////
+    val mongodb = Seq(
+      "org.mongodb.scala" %% "mongo-scala-driver" % Version.mongodb)
 
     ////////////////////////// Google client ////////////////////////
 
