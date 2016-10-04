@@ -55,6 +55,7 @@ object Build extends sbt.Build with StandardLibraries {
           ++ Libs.googleApisOAuth2
           ++ Libs.googleApiClient
           ++ Libs.jline
+          ++ Libs.mongodb
           // ++ Libs.hemingway
           ++ Libs.jsoup
       )
