@@ -54,6 +54,7 @@ trait StandardLibraries {
     val onyx            = "0.0.1"
     val caffeine        = "1.3.2"
     val jodaTime        = "2.9.4"
+    val jodaConvert     = "1.8.1"
     val restFb          = "1.14.1"
     val mapdb           = "3.0.1"
     val hemingway       = "0.1.0"
@@ -107,6 +108,11 @@ trait StandardLibraries {
 
     val jodaTime = Seq(
       "joda-time" % "joda-time" % Version.jodaTime)
+
+    //////////////////////// Joda Convert /////////////////////
+
+    val jodaConvert = Seq(
+      "org.joda" % "joda-convert" % Version.jodaConvert)
 
     ////////////////////////// MapDB //////////////////////////
 
